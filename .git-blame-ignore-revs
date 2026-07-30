@@ -275,3 +275,11 @@ b2f52ac12443c102712b735e456fd07a6525786b
 bb66b0c378e9bf7d97622a1582d93c4dfcf20fdd
 # Move AttrDict under beets.util
 ea334bd977ee8ed0cdbd627b7e9564dd08dd43f7
+# typing: type handlers and listeners explicitly
+74ab50c095b437009b9301b31f79ff9d6872a28d
+# typing: Define events in a separate module, import explicitly
+07407da5a732d0b716e6bb0daa546dc0eeaf61e8
+# typing: Import events module instead
+3e9f871ac3481bcd6d9c4f65fa4a1f495a759003
+# typing: add types to event handlers
+7b50006ae35ebbc779808c5d9c09a757278b1d89
