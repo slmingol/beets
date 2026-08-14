@@ -93,7 +93,9 @@ class TestAcoustidMatch:
     @patch("beetsplug.chroma.acoustid.fingerprint_file")
     def test_type_error_logged_not_raised(self, mock_fp):
         """TypeError from old pyacoustid without force_fpcalc must be caught."""
-        mock_fp.side_effect = TypeError("unexpected keyword argument 'force_fpcalc'")
+        mock_fp.side_effect = TypeError(
+            "unexpected keyword argument 'force_fpcalc'"
+        )
         log = self._make_log()
         chroma.acoustid_match(log, b"/fake/path.mp3")  # must not raise
         log.error.assert_called_once()
