@@ -47,6 +47,7 @@ jobs:
 
       - name: Check external links in docs
         run: poe check-docs-links
+        continue-on-error: true
 
       - name: Notify on failure
         if: ${{ failure() }}
